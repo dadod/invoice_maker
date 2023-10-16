@@ -5,7 +5,7 @@
   "main": "server.ts",
   "author": "Damir Dizdarevic",
   "license": "MIT",
-  "bin": "server.ts",
+  "bin": "./build/server.js",
   "dependencies": {
     "@google-cloud/local-auth": "^3.0.0",
     "command-line-args": "^5.2.1",

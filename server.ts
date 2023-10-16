@@ -3,18 +3,18 @@ import companyJson from './config/company.json';
 import commandLineArgs from 'command-line-args'
 import htmlToPdf from 'html-pdf-node'
 import { htmlPage } from "./config/invoice";
-import {google, GoogleApis} from "googleapis";
+import { google } from "googleapis";
 import dotenv from 'dotenv';
 import * as files from "fs";
 const fs = require('fs').promises;
-import {authenticate} from "@google-cloud/local-auth";
+import { authenticate } from "@google-cloud/local-auth";
 import path from "path";
 
 dotenv.config()
 
-const CREDENTIALS_PATH = path.join(process.cwd(), 'credentials.json');
+const CREDENTIALS_PATH = path.join(process.cwd(), './config/credentials.json');
 const SCOPES = ['https://www.googleapis.com/auth/drive']
-const TOKEN_PATH = path.join(process.cwd(), 'token.json');
+const TOKEN_PATH = path.join(process.cwd(), './config/token.json');
 
 export interface Client {
     id: string,
