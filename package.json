@@ -5,6 +5,7 @@
   "main": "server.ts",
   "author": "Damir Dizdarevic",
   "license": "MIT",
+  "bin": "server.ts",
   "dependencies": {
     "@google-cloud/local-auth": "^3.0.0",
     "command-line-args": "^5.2.1",
@@ -15,7 +16,8 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "create-invoice": "ts-node --esm server.ts"
+    "create-invoice": "node build/server.js",
+    "build": "rimraf ./build && tsc"
   },
   "devDependencies": {
     "@types/command-line-args": "^5.2.1",
