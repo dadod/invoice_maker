@@ -129,6 +129,7 @@ const createAndUploadPdf = async () => {
         throw err;
     }
 
+    files.rmSync(path.join(process.cwd(), `pdfs/${pdfName}`))
 }
 
 createAndUploadPdf().then(() => {
