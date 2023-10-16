@@ -1,0 +1,12 @@
+{
+  "name": "Test Company",
+  "owner": "Damir Dizdarevic",
+  "taxNumber": "1234567890",
+  "idNumber": "1234567890",
+  "address": "Vilsonovo Setaliste 10, Sarajevo 71000",
+  "phone": "+3870666123456",
+  "bankAccount": "387123456789",
+  "bankName": "Procredit banka Sarajevo",
+  "additionalInfo": "Broj rjesenja: <b>BR12341432434</b>, Opcina Novo Sarajevo"
+}
+

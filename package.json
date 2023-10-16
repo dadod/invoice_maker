@@ -1,0 +1,25 @@
+{
+  "name": "invoice_maker",
+  "version": "1.0.0",
+  "description": "Invoice maker for accounting purposes",
+  "main": "server.ts",
+  "author": "Damir Dizdarevic",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.0",
+    "command-line-args": "^5.2.1",
+    "dotenv": "^16.3.1",
+    "googleapis": "^127.0.0",
+    "html-pdf-node": "^1.0.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "create-invoice": "ts-node --esm server.ts"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.2.1",
+    "@types/html-pdf-node": "^1.0.0",
+    "@types/node": "^20.8.5"
+  }
+}
